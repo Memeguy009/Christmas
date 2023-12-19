@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+  <script src="//dev.hoasting.net/_tim-codepen/gsap/plugins/DrawSVGPlugin.js"></script>
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Home</title>
+</head>
+<body>
+  <!-- <div id="loading-screen">
+    <div id="snow"></div>
+    <svg viewBox="0 0 500 500">
+	    <line class="dotline1" x1="5" x2="500" y1="235" y2="235" stroke="#DE4E37" stroke-width="5" stroke-linecap="round" stroke-dasharray="1, 10"/>
+	    <line class="dotline2" x1="5" x2="500" y1="235" y2="235" stroke="#DE4E37" stroke-width="5" stroke-linecap="round" stroke-dasharray="1, 10"/>
+   
+      <g class="sock" transform="translate(30 180)">
+		    <path class="base" d="M26.3,31.8v30.3l-21,22.7c0,0-11.3,12,5.3,19.3h25.3c0,0,11.4-0.3,16.7-7.5c3.1-4.2,13.6-19.9,13.6-19.9s2.4-3.3,2.7-8.7l0.4-36.3H26.3z"/>
+		    <path class="top" d="M71.4,33.2H23.8c-3,0-5.5-2.5-5.5-5.5V7c0-3,2.5-5.5,5.5-5.5h47.6c3,0,5.5,2.5,5.5,5.5v20.6C76.9,30.7,74.4,33.2,71.4,33.2z"/>
+		    <path class="stripe" d="M55.7,74.3c0,0,0.6-10.5,13.4-10.5"/>
+		    <circle class="dot1" cx="53.1" cy="23.9" r="2.5"/>
+		    <circle class="dot2" cx="60.6" cy="23.9" r="2.5"/>
+		    <circle class="dot3" cx="68" cy="23.9" r="2.5"/>
+	    </g>
+    	<g class="sock white" transform="translate(30 180)">
+		    <path class="base" d="M26.3,31.8v30.3l-21,22.7c0,0-11.3,12,5.3,19.3h25.3c0,0,11.4-0.3,16.7-7.5c3.1-4.2,13.6-19.9,13.6-19.9s2.4-3.3,2.7-8.7l0.4-36.3H26.3z"/>
+		    <path class="top" d="M71.4,33.2H23.8c-3,0-5.5-2.5-5.5-5.5V7c0-3,2.5-5.5,5.5-5.5h47.6c3,0,5.5,2.5,5.5,5.5v20.6C76.9,30.7,74.4,33.2,71.4,33.2z"/>
+		    <path class="stripe" d="M55.7,74.3c0,0,0.6-10.5,13.4-10.5"/>
+		    <circle class="dot1" cx="53.1" cy="23.9" r="2.5"/>
+		    <circle class="dot2" cx="60.6" cy="23.9" r="2.5"/>
+		    <circle class="dot3" cx="68" cy="23.9" r="2.5"/>
+	    </g>
+    	<g class="sock" transform="translate(30 180)">
+		    <path class="base" d="M26.3,31.8v30.3l-21,22.7c0,0-11.3,12,5.3,19.3h25.3c0,0,11.4-0.3,16.7-7.5c3.1-4.2,13.6-19.9,13.6-19.9s2.4-3.3,2.7-8.7l0.4-36.3H26.3z"/>
+		    <path class="top" d="M71.4,33.2H23.8c-3,0-5.5-2.5-5.5-5.5V7c0-3,2.5-5.5,5.5-5.5h47.6c3,0,5.5,2.5,5.5,5.5v20.6C76.9,30.7,74.4,33.2,71.4,33.2z"/>
+		    <path class="stripe" d="M55.7,74.3c0,0,0.6-10.5,13.4-10.5"/>
+		    <circle class="dot1" cx="53.1" cy="23.9" r="2.5"/>
+		    <circle class="dot2" cx="60.6" cy="23.9" r="2.5"/>
+		    <circle class="dot3" cx="68" cy="23.9" r="2.5"/>
+    	</g>
+	    <g class="sock white" transform="translate(30 180)">
+		    <path class="base" d="M26.3,31.8v30.3l-21,22.7c0,0-11.3,12,5.3,19.3h25.3c0,0,11.4-0.3,16.7-7.5c3.1-4.2,13.6-19.9,13.6-19.9s2.4-3.3,2.7-8.7l0.4-36.3H26.3z"/>
+		    <path class="top" d="M71.4,33.2H23.8c-3,0-5.5-2.5-5.5-5.5V7c0-3,2.5-5.5,5.5-5.5h47.6c3,0,5.5,2.5,5.5,5.5v20.6C76.9,30.7,74.4,33.2,71.4,33.2z"/>
+	    	<path class="stripe" d="M55.7,74.3c0,0,0.6-10.5,13.4-10.5"/>
+		    <circle class="dot1" cx="53.1" cy="23.9" r="2.5"/>
+    		<circle class="dot2" cx="60.6" cy="23.9" r="2.5"/>
+		    <circle class="dot3" cx="68" cy="23.9" r="2.5"/>
+	    </g>
+    </svg>
+  </div> -->
+
+  <!-- <script src="./scripts/loading-screen.js"></script> -->
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#privacyAndPolice">Privacy Police</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="top">
+    <div class="content">
+      <h1>Welcome</h1>
+      
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, ullam nulla ab possimus, architecto quas quod porro eius voluptates ipsum sapiente, at saepe sit corrupti iure! Earum doloremque ratione sequi.</p>
+    </div>
+  </section>
+  
+  <section id="products">
+    <h1>Products</h1>
+
+    <div class="content">
+      <product>
+        <image-box></image-box>
+
+        <name>$19</name>
+      </product>
+
+      <product>
+        <image-box></image-box>
+
+        <name>$7</name>
+      </product>
+
+      <product>
+        <image-box></image-box>
+
+        <name>$4</name>
+      </product>
+    </div>
+  </section>
+
+  <section id="privacyAndPolice">
+    <!-- <img src="./img/identity-protection-icon.png" alt="secure" id="secure"> -->
+
+    <div class="content">
+      <h1>Privacy Police</h1>
+      
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex fugit quisquam quaerat adipisci sunt reiciendis modi ratione debitis dolorum nam! Quis beatae impedit alias, voluptates reprehenderit ea officiis. Amet, impedit?</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>2023 @ All Rights <a href="#top" title="Easter Egg">Not</a> Reserved.</p>
+
+    <div id="ruins-mode">
+      Not Select this: <input type="checkbox">
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        if (document.querySelector('#ruins-mode input:checked')) {
+          document.querySelector('#ruins-mode input:checked').click();
+        }
+      });
+
+      document.querySelector('#ruins-mode input').addEventListener('change', () => {
+        if (document.querySelector('#ruins-mode input:checked')) {
+          window.location = './ruined-city.html'
+        }
+      });
+    </script>
+  </footer>
+</body>
+</html>
